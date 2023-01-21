@@ -12,123 +12,152 @@
 
 <body>
 
-    <%- include('partials/navigation') %>
-
+    <div class="container-fluid bg bg-light">
         <br>
+        <%- include('partials/navigation')%>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-        <div class="jumbotron">
-            <div class="container">
-                <h1 class="display-3">Hoteles Mimosa</h1>
-                <p class="lead">Pagina para encontrar hotel. Dale click en reservar y disfruta de nuestros mejores hoteles en toda colombia.</p>
-                <hr class="my-4">
+
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="bogotaa.jpg" class="d-block w-100" alt="holaaa">
+            </div>
+            <div class="carousel-item">
+                <img src="medellin.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="cali.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="cartagena.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="sanandres.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="guatape.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="barranquilla.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
 
+    <div class="container-fluid bg-light">
+        <hr class="my-4">
+    </div>
+    <br>
+
+
+    <div class="container bg-light text-muted border">
         <br>
-
-
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h2 class="text-secondary">BOGOTA</h2>
-                    <h6>Disfruta tu estadia en la capita de Colombia. Arpovecha nuestras ofertas por tiempo limitado!</h6>
-                    <br>
-                    <button type="button" class="btn btn-dark">Reservar</button>
-                </div>
-                <div class="col-sm-3">
-                    <h2 class="text-warning">CALI</h2>
-                    <h6>Conoce lo que es el sabor, ven y realiza tu reserva ya y disfruta de la salsa y la rumba en Cali.</h6>
-                    <br>
-                    <button type="button" class="btn btn-dark">Reservar</button>
-                </div>
-                <div class="col-sm-3">
-                    <h2 class="text-success">MEDELLIN</h2>
-                    <h6>Te esperamos en la ciudad de la eterna primavera, tenemos sitios turisticos que seguro te van a encantar.</h6>
-                    <br>
-                    <button type="button" class="btn btn-dark">Reservar</button>
-                </div>
-                <div class="col-sm-3">
-                    <h2 class="text-danger">CARTAGENA</h2>
-                    <h6>Tenemos los mejores hoteles para que visites los detinos mas bellos de America latina. Conocenos.</h6>
-                    <br>
-                    <button type="button" class="btn btn-dark">Reservar</button>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-sm-3">
-                    <h2 class="text-succes">SAN ANDRES</h2>
-                    <h6>Ven y conoce la cultura san andresana, esta isla te espera con los mejores lugares para practicar buceo</h6>
-                    <br>
-                    <button type="button" class="btn btn-dark">Reservar</button>
-
-                </div>
-                <div class="col-sm-3">
-                    <h2 class="text-danger">GUATAPE</h2>
-                    <h6>Este lugar tiene miles de historia que seguro te van a gustar, la piedra del peñol te espera.</h6>
-                    <br>
-                    <button type="button" class="btn btn-dark">Reservar</button>
-                </div>
-                <div class="col-sm-3">
-                    <h2 class="text-secondary">MANIZALES</h2>
-                    <h6>Desde aqui podras conocer el volcan nevado del ruiz, ven a visitar el departamento de caldas.</h6>
-                    <br>
-                    <button type=" button " class="btn btn-dark ">Reservar</button>
-                </div>
-                <div class="col-sm-3 ">
-                    <h2 class="text-warning ">BARRANQUILLA</h2>
-                    <h6>Participa del carnaval de barranquilla en la ciudad del parque cultural del caribe complejo arquitectonico.</h6>
-                    <br>
-                    <button type="button " class="btn btn-dark ">Reservar</button>
-                </div>
-
-
-            </div>
-
-        </div>
-
         <br>
+        <div class="row">
+            <div class="col-sm-4">
 
-
-        <!-- FOOTER -->
-        <footer class="w-100 py-4 flex-shrink-0 ">
-
-            <div class="container py-4 ">
-
-
-
-                <div class="row gy-4 gx-5 ">
-                    <div class="col-lg-4 col-md-6 ">
-                        <h5 class="h1 text-white ">FB.</h5>
-                        <p class="small text-muted "> Puedes contactarnos en los siguientes enlaces y paginas.</p>
-                        <p class="small text-muted mb-0 ">&copy; Copyrights. All rights reserved.</p>
+                <p>hola</p>
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2 class="text-dark">BOGOTA</h2>
+                        <h6>Disfruta tu estadia en la capita de Colombia. Arpovecha nuestras ofertas por tiempo limitado!</h6>
+                        <br>
+                        <button type="button" class="btn btn-dark">Reservar</button>
                     </div>
-                    <div class="col-lg-4 col-md-6 ">
-                        <h5 class="text-white mb-3 ">Quick links</h5>
-                        <ul class="list-unstyled text-muted ">
-                            <li><a href="# ">www.hotelescol.facebook.com</a></li>
-                            <li>
-                                <p>+57 3177445499</p>
-                            </li>
-                            <li><a href="# ">Home</a></li>
-                            <li><a href="# ">FAQ</a></li>
-                        </ul>
+                    <div class="col-sm-4">
+                        <h2 class="text-dark">CALI</h2>
+                        <h6>Conoce lo que es el sabor, ven y realiza tu reserva ya y disfruta de la salsa y la rumba en Cali.</h6>
+                        <br>
+                        <button type="button" class="btn btn-dark">Reservar</button>
                     </div>
-                    <div class="col-lg-4 col-md-6 ">
-                        <h5 class="text-white mb-3 ">Newsletter</h5>
-                        <p class="small text-muted ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                        <form action="# ">
-                            <div class="input-group mb-3 ">
-                                <input class="form-control " type="text " placeholder="Recipient 's username" aria-label="Recipient's username " aria-describedby="button-addon2 ">
-                                <button class="btn btn-primary " id="button-addon2 " type="button "><i class="fas fa-paper-plane "></i></button>
-                            </div>
-                        </form>
+                    <div class="col-sm-4">
+                        <h2 class="text-dark">MEDELLIN</h2>
+                        <h6>Te esperamos en la ciudad de la eterna primavera, tenemos sitios turisticos que seguro te gustará.</h6>
+                        <br>
+                        <button type="button" class="btn btn-dark">Reservar</button>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2 class="text-dark">SAN ANDRES</h2>
+                        <h6>Ven y conoce la cultura san andresana, esta isla te espera con los mejores lugares para practicar buceo</h6>
+                        <br>
+                        <button type="button" class="btn btn-dark">Reservar</button>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <h2 class="text-dark">GUATAPE</h2>
+                        <h6>Este lugar tiene miles de historia que seguro te van a gustar, la piedra del peñol te espera.</h6>
+                        <br>
+                        <button type="button" class="btn btn-dark">Reservar</button>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2 class="text-dark">CARTAGENA</h2>
+                        <h6>Tenemos los mejores hoteles para que visites los detinos mas bellos de America latina. Conocenos.</h6>
+                        <br>
+                        <button type="button" class="btn btn-dark">Reservar</button>
                     </div>
                 </div>
             </div>
-        </footer>
         </div>
+        <br>
+        <br>
+    </div>
+
+    <br>
+
+    <!-- FOOTER -->
+    <footer class="w-100 py-4 flex-shrink-0 ">
+
+        <div class="container-fluid py-4 bg-light">
+
+
+
+            <div class="row gy-4 gx-5 ">
+                <div class="col-lg-4 col-md-6 ">
+                    <h5 class="h1 text-dark ">FB.</h5>
+                    <p class="small text-muted "> Puedes contactarnos en los siguientes enlaces y paginas.</p>
+                    <p class="small text-muted mb-0 ">&copy; Copyrights. All rights reserved.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <h5 class="text-dark mb-3 ">Quick links</h5>
+                    <ul class="list-unstyled text-muted ">
+                        <li><a href="# ">www.hotelescol.facebook.com</a></li>
+                        <li>
+                            <p>+57 3177445499</p>
+                        </li>
+                        <li><a href="# ">Home</a></li>
+                        <li><a href="# ">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <h5 class="text-dark mb-3 ">Newsletter</h5>
+                    <p class="small text-muted ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <form action="# ">
+                        <div class="input-group mb-3 ">
+                            <input class="form-control " type="text " placeholder="Recipient 's username" aria-label="Recipient's username " aria-describedby="button-addon2 ">
+                            <button class="btn btn-primary " id="button-addon2 " type="button "><i class="fas fa-paper-plane "></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
 
 </body>
 

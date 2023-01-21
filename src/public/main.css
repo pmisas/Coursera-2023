@@ -1,19 +1,15 @@
 body {
-    margin: 0;
-    background: red;
-    height: 100vh;
-    position: relative;
-    text-align: center;
-    color: #fff;
+    background-image: url(image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000000;
 }
 
-body:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 50%;
-    background: blue;
-    z-index: -1;
+cuadrado {
+    width: 200px;
+    height: 200px;
+    background-color: #000000;
+    position: fixed;
+    top: 50px;
+    left: 100[x];
 }
