@@ -11,10 +11,10 @@
 </head>
 
 <body>
-
-    <div class="container-fluid bg bg-light">
-        <br>
-        <%- include('partials/navigation')%>
+    <div class="sticky-top">
+        <div class="container-fluid bg bg-light">
+            <%- include('partials/navigation')%>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
@@ -23,25 +23,25 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="bogotaa.jpg" class="d-block w-100" alt="holaaa">
+                <img src="ciudades/bogotaa.jpg" class="d-block w-100" alt="holaaa">
             </div>
             <div class="carousel-item">
-                <img src="medellin.jpg" class="d-block w-100" alt="...">
+                <img src="ciudades/medellin.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="cali.jpg" class="d-block w-100" alt="...">
+                <img src="ciudades/cali.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="cartagena.jpg" class="d-block w-100" alt="...">
+                <img src="ciudades/cartagena.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="sanandres.jpg" class="d-block w-100" alt="...">
+                <img src="ciudades/sanandres.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="guatape.jpg" class="d-block w-100" alt="...">
+                <img src="ciudades/guatape.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="barranquilla.jpg" class="d-block w-100" alt="...">
+                <img src="ciudades/barranquilla.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -67,56 +67,68 @@
             <div class="col-sm-4">
 
                 <div class="jumbotron">
-                  <h1 class="display-4">Hoteles Mimosa</h1>
-                  <p class="lead">Este es tu lugar ideal para viajar a los lugares ma turisticos e importantes de colombia</p>
+                  <h class="display-4">Hoteles Mimosa</h>
+                  <p style="font-size: 25px">Este es tu lugar ideal para viajar a los lugares ma turisticos e importantes de colombia</p>
                   <hr class="my-4">
                   <p>Aun no estas decidido en que lugar quieres pasar tus vacaciones? dale click y mirara mas sobre nuestros destinos.</p>
-                  <a class="btn btn-light btn-outline-dark btn-lg" href="#" role="button">Ver destinos</a>
+                  <a class="btn btn-light btn-outline-dark btn-lg" href="/room" role="button">Ver habitaciones</a>
+                  <br>
+                  <br>
                 </div>
 
             </div>
             <div class="col-sm-8">
                 <div class="row">
                     <div class="col-sm-4">
-                        <h2 class="text-dark">BOGOTA</h2>
-                        <h6>Disfruta tu estadia en la capita de Colombia. Arpovecha nuestras ofertas por tiempo limitado!</h6>
+                        <hh class="text-dark">BOGOTA</hh>
+                        <p>Disfruta tu estadia en la capita de Colombia. Arpovecha nuestras ofertas por tiempo limitado!</p>
                         <br>
-                        <button type="button" class="btn btn-dark">Reservar</button>
+                        <a type="button" class="btn btn-dark" href="/bogota">Reservar</a>
+                        <br>
+                        <br>
                     </div>
                     <div class="col-sm-4">
-                        <h2 class="text-dark">CALI</h2>
-                        <h6>Conoce lo que es el sabor, ven y realiza tu reserva ya y disfruta de la salsa y la rumba en Cali.</h6>
+                        <hh class="text-dark">CALI</hh>
+                        <p>Conoce lo que es el sabor, ven y realiza tu reserva ya y disfruta de la salsa y la rumba en Cali.</p>
                         <br>
-                        <button type="button" class="btn btn-dark">Reservar</button>
+                        <a type="button" class="btn btn-dark" href="/cali">Reservar</a>
+                        <br>
+                        <br>
                     </div>
                     <div class="col-sm-4">
-                        <h2 class="text-dark">MEDELLIN</h2>
-                        <h6>Te esperamos en la ciudad de la eterna primavera, tenemos sitios turisticos que seguro te gustará.</h6>
+                        <hh class="text-dark">MEDELLIN</hh>
+                        <p>Te esperamos en la ciudad de la eterna primavera, tenemos sitios turisticos que seguro te gustará.</p>
                         <br>
-                        <button type="button" class="btn btn-dark">Reservar</button>
+                        <a class="btn btn-dark" href="/medellin">Reservar</a>
+                        
+                        <br>
+                        <br>
                     </div>
                 </div>
-                <br>
-                <br>
                 <div class="row">
                     <div class="col-sm-4">
-                        <h2 class="text-dark">SAN ANDRES</h2>
-                        <h6>Ven y conoce la cultura san andresana, esta isla te espera con los mejores lugares para practicar buceo</h6>
+                        <hh class="text-dark">SAN ANDRES</hh>
+                        <p>Ven y conoce la cultura san andresana, esta isla te espera con los mejores lugares para practicar buceo</p>
                         <br>
-                        <button type="button" class="btn btn-dark">Reservar</button>
-
+                        <a type="button" class="btn btn-dark" href="/sanandres">Reservar</a>
+                        <br>
+                        <br>
                     </div>
                     <div class="col-sm-4">
-                        <h2 class="text-dark">GUATAPE</h2>
-                        <h6>Este lugar tiene miles de historia que seguro te van a gustar, la piedra del peñol te espera.</h6>
+                        <hh class="text-dark">GUATAPE</hh>
+                        <p>Este lugar tiene miles de historia que seguro te van a gustar, Aqui está la piedra del peñol, te esperamos.</p>
                         <br>
-                        <button type="button" class="btn btn-dark">Reservar</button>
+                        <a type="button" class="btn btn-dark" href="/guatape">Reservar</a>
+                        <br>
+                        <br>
                     </div>
                     <div class="col-sm-4">
-                        <h2 class="text-dark">CARTAGENA</h2>
-                        <h6>Tenemos los mejores hoteles para que visites los detinos mas bellos de America latina. Conocenos.</h6>
+                        <hh class="text-dark">CARTAGENA</hh>
+                        <p>Tenemos los mejores hoteles para que visites los detinos mas bellos de America latina. Conocenos.</p>
                         <br>
-                        <button type="button" class="btn btn-dark">Reservar</button>
+                        <a type="button" class="btn btn-dark" href="/cartagena">Reservar</a>
+                        <br>
+                        <br>
                     </div>
                 </div>
             </div>
